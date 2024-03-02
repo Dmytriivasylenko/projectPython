@@ -1,16 +1,33 @@
-my_list = [1, 2, 3, 4, 5, 6]
-print([my_list[:3], my_list[3:]])
+def split_list(input_list):
+    if len(input_list) == 0:
+        return [[], []]
+    elif len(input_list) % 2 == 0:
+        split_index = len(input_list) // 2
+    else:
+        split_index = len(input_list) // 2 + 1
 
-my_list1 = [1, 2, 3]
-print([my_list1[:3], my_list1[2:]])
+    first_half = input_list[:split_index]
+    second_half = input_list[split_index:]
+    return [first_half, second_half]
 
 
-my_list2 = [1, 2, 3, 4, 5]
-print([my_list2[:3], my_list2[3:]])
 
-my_list3 = [1, []]
-print([my_list3[:1], my_list3[1:]])
 
-my_list4 = [[]] * 2
-print(my_list4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
