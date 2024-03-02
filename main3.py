@@ -11,6 +11,6 @@ print([my_list2[:3], my_list2[3:]])
 my_list3 = [1, []]
 print([my_list3[:1], my_list3[1:]])
 
-my_list4 = [ [], []]
-print([my_list4[: ], my_list4[ :]])
+my_list4 = [[]] * 2
+print(my_list4)
 
