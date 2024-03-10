@@ -9,5 +9,4 @@ def project1():
 
     return hashtag
 
-# Приклад
 print(project1())
