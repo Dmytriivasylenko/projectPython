@@ -1,7 +1,12 @@
-def hashtag(s):
-    hashtag = '#' + ''.join(word.capitalize() for word in s.split() if word.isalnum())
-    return hashtag[:140]
+def hashtag():
+    s = input("Enter a phrase: ")
+    cleaned_s = ''.join(char for char in s if char.isalnum())
 
-print(hashtag('Python Community'))
-print(hashtag('i like python community!'))
-print(hashtag('Should, I. subscribe? Yes!'))
+    hashtag = '#' + ''.join(word.capitalize() for word in cleaned_s.split())
+
+    if len(hashtag) > 140:
+        hashtag = hashtag[:140]
+
+    return hashtag
+
+print(hashtag())
