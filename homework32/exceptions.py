@@ -1,0 +1,3 @@
+
+class TooManyStudentsError(Exception):
+    pass
