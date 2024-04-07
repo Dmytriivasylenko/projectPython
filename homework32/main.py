@@ -1,6 +1,6 @@
 
 from group import Group
-from exceptions import TooManyStudentsError
+from exception import TooManyStudentsError
 from student import Student
 
 group = Group("PD1")
