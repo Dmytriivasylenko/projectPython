@@ -19,13 +19,14 @@ class Group:
         for student in self.students:
             if student.last_name == last_name:
                 self.students.remove(student)
+                break
 
 
     def find_student(self, last_name):
         for student in self.students:
             if student.last_name == last_name:
                 return student
-        return
+        return None
 
     def __str__(self):
         student_info = "\n".join(str(student) for student in self.students)
